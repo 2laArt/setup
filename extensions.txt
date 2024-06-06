@@ -1,0 +1,24 @@
+auto import
+auto rename tag
+backticks
+code spell checker
+russian code spell checker
+codeium: AI Co..
+color highlight
+docker
+esLint
+import cost
+
+intelliCode
+intelliCode API Usage...
+prisma
+
+live Server
+material icon theme
+path intellisense
+postCSS lang
+prettier
+pretty typescript
+svg preview
+tailwind css
+TODO highlight
