@@ -1,0 +1,246 @@
+{
+	"window.openFilesInNewWindow": "off",
+	"editor.wordWrapColumn": 100,
+	"editor.renderWhitespace": "all",
+	"editor.insertSpaces": false,
+	"editor.mouseWheelZoom": true,
+	"editor.suggestSelection": "first",
+	"liveServer.settings.CustomBrowser": "chrome",
+	"editor.linkedEditing": true,
+	//плавный скролл
+	// "editor.smoothScrolling": true,
+	"editor.fontSize": 18,
+	"editor.lineHeight": 24,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "bounded",
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "Dank Mono, IBM Plex Mono",
+	"editor.inlayHints.fontFamily": "Pragmata Pro",
+	"notebook.outputFontFamily": "Pragmata Pro",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					//following will be in italic (=FlottFlott)
+					"comment",
+					"entity.name.type.class", //class names
+					"keyword", //import, export, return…
+					"constant", //String, Number, Boolean…, this, super
+					"storage.modifier", //static keyword
+					"storage.type.class.js" //class keyword
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					//following will be excluded from italics (VSCode has some defaults for italics)
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+
+	//Appearance
+	"editor.cursorBlinking": "expand",
+	"workbench.editor.closeEmptyGroups": false,
+	"editor.bracketPairColorization.enabled": true,
+
+	//Terminal
+	"terminal.integrated.fontFamily": "Iosevka NFM",
+	"terminal.integrated.fontSize": 15,
+
+	//Explorer
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+
+	//Emmet
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.showExpandedAbbreviation": "never",
+	"emmet.includeLanguages": {
+		"postcss": "scss"
+	},
+	//Разрешить уменьшение размера вкладок, когда доступного места недостаточно для отображения всех вкладок одновременно.
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.startupEditor": "newUntitledFile",
+
+	//Debug
+	"debug.toolBarLocation": "hidden",
+	"debug.focusWindowOnBreak": false,
+	"debug.showInlineBreakpointCandidates": false,
+	"debug.showBreakpointsInOverviewRuler": false,
+
+	//Определяет, будет ли редактор прокручиваться за пределы последней строки.
+	"editor.scrollBeyondLastLine": true,
+	"editor.multiCursorModifier": "alt",
+	// "editor.scrollbar.horizontal": "hidden",
+	// "editor.scrollbar.vertical": "hidden",
+
+	//debug icons hide
+	"editor.glyphMargin": false,
+
+	"workbench.colorCustomizations": {
+		"editorOverviewRuler.errorForeground": "#0000",
+		"editorOverviewRuler.warningForeground": "#0000",
+		"editorOverviewRuler.infoForeground": "#0000"
+	},
+
+	//Format
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"eslint.format.enable": true,
+	//Включите круглые скобки вокруг единственного параметра функции стрелки
+	"prettier.arrowParens": "avoid",
+	"eslint.packageManager": "yarn",
+	// "files.associations": {
+	// 	"*.scss": "scss",
+	// 	"*.module.scss": "postcss"
+	// },
+	"editor.inlineSuggest.enabled": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	//Breadcrumbs
+	"breadcrumbs.icons": false,
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off",
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+
+	//JS & TS
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.suggest.autoImports": true,
+	"typescript.suggest.autoImports": true,
+
+	// "javascript.format.semicolons": "remove",
+	// "typescript.format.semicolons": "remove",
+	"typescript.suggest.paths": false,
+	"javascript.suggest.paths": false,
+
+	//Spell checker
+	"cSpell.language": "en,ru",
+	"cSpell.userWords": [],
+	"cSpell.enabled": true,
+	"cSpell.enableFiletypes": [
+		"blade",
+		"jsx",
+		"tsx",
+		"ts",
+		"js",
+		"scss",
+		"sass",
+		"vue"
+	],
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true
+	},
+	"editor.hideCursorInOverviewRuler": true,
+	"git.enableSmartCommit": true,
+
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.copyOnSelection": true,
+
+	"eslint.options": {
+		"extensions": [".html", ".js", ".vue", ".jsx", ".ts", "tsx"]
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue"
+	],
+
+	"[vue]": {
+		"editor.defaultFormatter": "octref.vetur"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"vetur.completion.scaffoldSnippetSources": {
+		"workspace": "💼",
+		"user": "🗒️",
+		"vetur": "✌"
+	},
+	"vetur.format.defaultFormatter.html": "js-beautify-html",
+	"vetur.format.defaultFormatterOptions": {
+		"js-beautify-html": {
+			// "wrap_attributes": "aligned-multiple"
+		},
+		"prettyhtml": {
+			"printWidth": 400,
+			"wrapAttributes": true
+		}
+	},
+	"jest.debugMode": true,
+	"jest.showCoverageOnLoad": true,
+	"jest.autoRun": "off",
+	"autoimport.filesToScan": "./**/*.{ts,tsx,js,jsx,test.js,test.ts}",
+	"autoimport.doubleQuotes": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"tailwindCSS.includeLanguages": {
+		"react": "jsx",
+		"html": "html",
+		"javascript": "javascript",
+		"css": "css"
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"tailwindCSS.experimental.configFile": null,
+	"workbench.layoutControl.enabled": false,
+	"editor.unicodeHighlight.allowedLocales": {
+		"ru": true
+	},
+	"window.zoomLevel": 1,
+	"editor.largeFileOptimizations": false,
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"git.autofetch": true,
+	"prisma.showPrismaDataPlatformNotification": false,
+	"[postcss]": {}
+
+	// "auto-rename-tag.activationOnLanguage": ["html", "javascript", "handlebars"]
+}
