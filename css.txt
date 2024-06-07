@@ -1,0 +1,22 @@
+[class^="class-..."] {body...}
+ auto click === click();
+
+Math.ceil - rounds up
+
+grid place-items-center
+
+color   "hsl(360,100%,50%)"
+
+disable -запретить
+
+[&>th]:text-center
+
+Number.isNaN(22) = true
+parseFloat('12aa') = 12
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+yarn migrate:deploy && next build
