@@ -1,0 +1,57 @@
+1. инициализировать репозиторий / создать папку '.git' { git init }
+2. посмотреть что в папке { Window: dir , Mac : ls }
+2.1 создать новую папку   {mkdir ***}
+2.2 create new file  	  {echo содержимое файла > name.txt}
+  3. commit                 { git commit -m "Some commit" }
+  4. ***Ветки***branch***
+	4.1. посмотреть в какой ветке нахожусь { git branch }
+	4.1.1 show all branchas { git branch -a }
+	4.1.2 show all remote branshes { git branch -r }
+	4.1.3 show all commits {  }
+	4.2. добавить ветку                    { git branch ***** }
+	4.3. удалить ветку			{ git branch -D **** }
+	4.4. переидти в др ветку		{ git checkout ****}
+	4.5 создать ветку и сразу переклучится  { git checkout -b *** }
+	
+	4.6 ***СКЛЕИТЬ ВЕТКИ ***
+		находясь в одной ветке пишешь КОМ, 
+		название ветки {git merge ***}
+	4.6.1 ***СКЛЕИТЬ ВЕТКИ БЕЗ КОММИТА ***
+		 
+		название ветки {git rebase ***}
+	4.7 chage name branch    		{ git branch -M ***}
+						
+  6 change user     {git config --global user.name/email "***"}
+  7 { git clone 'ULR repositoy' }
+ 	7.1 клонировать нужную ветку  		{git clone -b namebrach URLrepository}
+  8. внести изменения на github			{ git push }
+  8.1 внести изменения на github new branch 	{ git push origin new_branch }
+  8.2 
+9. забрать изменения с github 		{git pull}
+9.1 забрать изменения с github remote		{git pull upsteam <branch>}
+
+10. убрать не закониченные 
+	изменение в файле {git checkout src/App.js}
+11. gitk --all&     (открыть графическую оболочку гита, 
+	чтобы позырить все коммиты)
+ctrl + insert (копировать в буфер обмена) 
+shift + insert (вставить из буфера обмена) 
+git checkout commit-number (переключится на нужный коммит)
+
+31. remove last commit: git reset HEAD~1
+
+32. clone branch: git clone --branch <branchname> <remote-repo-url>
+
+33 GIT STASH 
+	save some chages:        git stash save <change name>
+	hide new files to stash  git stash save -u <change name>
+				 git stash list
+	pick up first    	 git stash show 
+	pisk up any		 git stash show stash stash@{1}
+
+
+
+
+
+
+
